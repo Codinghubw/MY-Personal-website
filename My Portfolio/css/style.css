@@ -1,0 +1,223 @@
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+/* About Section Styles */
+.about-img {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: translateY(-5px);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: -20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-badge span {
+    font-weight: 700;
+    color: white;
+}
+
+.about-content .section-title {
+    margin-bottom: 30px;
+}
+
+.key-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.key-point:hover {
+    transform: translateX(5px);
+}
+
+.key-point i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.key-point span {
+    font-weight: 500;
+}
+
+/* Responsive Design - Mobile First Approach */
+/* Base styles for mobile devices */
+.section-padding {
+    padding: 40px 0;
+}
+
+.display-4 {
+    font-size: 2rem;
+}
+
+.section-title {
+    font-size: 1.8rem;
+}
+
+.hero-section {
+    min-height: 100vh;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.profile-img {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.hero-btns {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero-btns .btn {
+    width: 100%;
+    padding: 12px 24px;
+}
+
+.project-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.project-filters .btn {
+    flex: 1;
+    min-width: 120px;
+    margin: 0.25rem;
+}
+
+.experience-badge {
+    padding: 15px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.experience-badge span {
+    font-size: 1.5rem;
+}
+
+.key-point {
+    padding: 12px;
+}
+
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section {
+        padding: 80px 0;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+    }
+
+    .hero-btns {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-btns .btn {
+        width: auto;
+    }
+
+    .profile-img {
+        max-width: 300px;
+    }
+
+    .project-filters {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+/* Desktop (992px and up) */
+@media (min-width: 992px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .hero-section {
+        text-align: left;
+        padding: 100px 0;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .hero-btns {
+        justify-content: flex-start;
+    }
+
+    .about-content {
+        margin-top: 0;
+    }
+
+    .project-card {
+        margin-bottom: 0;
+    }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .section-padding {
+        padding: 100px 0;
+    }
+
+    .hero-section {
+        padding: 120px 0;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Ensure images are responsive */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Improve touch targets on mobile */
+@media (hover: none) {
+    .nav-link,
+    .btn {
+        padding: 0.75rem 1rem;
+    }
+
+    .key-point {
+        padding: 12px;
+    }
+}
